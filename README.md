@@ -10,7 +10,8 @@ The purpose of this repo is to store and track my weekly lab work as I learn the
 
 | Folder / File | Description | Date |
 | --- | --- | --- |
-| `Lab 1` | Introduction to HTML | 21-10-2026 |
+| `Lab 1` | Introduction to HTML        | 21-10-2026 |
+| `Lab 2` | Introduction to HTML (Pt.2) | 28-10-2026 |
 
 ## Technologies Used
 
