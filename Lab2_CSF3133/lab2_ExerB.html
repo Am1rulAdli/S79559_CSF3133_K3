@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Course Feedback</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+      Error Identification Log:
+      - Error 1 (Line 10): Incorrect closing tag </head> instead of </header>
+      - Error 2 (Line 18): Missing <tr> opening tag for the second data row.
+      - Error 3 (Line 21): Missing closing tag </td> for topic cell "Semantic HTML".
+      - Error 4 (Line 17 & 21): <td> used inside table headers instead of <th>, causing broken layout.
+      - Error 5 (Line 40): Input id="fullname" does not match label for="name".
+      - Error 6 (Line 43-45): Radio buttons have different name attributes ("good" and "poor"), allowing both to be selected simultaneously. Also, label "for='labs'" mismatch with checkbox id="lab".
+      - Error 7 (Line 49): Typo in closing form tag </from> instead of </form>.
+    -->
+
+    <!-- Header Section -->
+    <header>
+        <h1>CSF3133 Course Feedback</h1>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="#results">Results</a> | 
+        <a href="#form">Feedback Form</a> | 
+        <a href="#comments">Student Comments</a>
+    </nav>
+
+    <!-- Results Section -->
+    <section id="results">
+        <h2>Feedback Summary</h2>
+        <table>
+            <tr>
+                <th>Week</th>
+                <th>Topic</th>
+                <th>Rating</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Introduction to HTML</td>
+                <td>4.5</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td colspan="2">Tables and Forms</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Semantic HTML</td>
+                <td>4.0</td>
+            </tr>
+            <!-- Part 2 Extension: Week 4 and Week 5 rows with rowspan -->
+            <tr>
+                <td>4</td>
+                <td rowspan="2">Mini Project</td>
+                <td>4.8</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>4.9</td>
+            </tr>
+            <!-- Part 2 Extension: Average Rating row with colspan -->
+            <tr>
+                <td colspan="2">Average Rating</td>
+                <td>4.44</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Feedback Form Section -->
+    <section id="form">
+        <h2>Give Your Feedback</h2>
+        <form action="submit_feedback.php" method="post">
+            
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <!-- Part 2 Extension: E-mail input with matching label -->
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label>Overall rating:</label><br>
+            <!-- Fixed radio group names and labels + Third option "Average" -->
+            <input type="radio" id="good" name="rating" value="good">
+            <label for="good">Good</label><br>
+            <input type="radio" id="average" name="rating" value="average">
+            <label for="average">Average</label><br>
+            <input type="radio" id="poor" name="rating" value="poor">
+            <label for="poor">Poor</label><br><br>
+
+            <!-- Fixed checkbox label matching -->
+            <input type="checkbox" id="lab" name="lab" value="yes">
+            <label for="lab">I attended all labs</label><br><br>
+
+            <!-- Part 2 Extension: Checkboxes for topics to practice more -->
+            <label>Topics I want more practice on:</label><br>
+            <input type="checkbox" id="topic_tables" name="extra_topics" value="tables">
+            <label for="topic_tables">Tables & Merged Cells</label><br>
+            <input type="checkbox" id="topic_forms" name="extra_topics" value="forms">
+            <label for="topic_forms">Forms & Inputs</label><br>
+            <input type="checkbox" id="topic_semantic" name="extra_topics" value="semantic">
+            <label for="topic_semantic">Semantic HTML</label><br><br>
+
+            <!-- Part 2 Extension: Select Drop-down for Section/Group -->
+            <label for="section_group">Section / Group:</label><br>
+            <select id="section_group" name="section_group">
+                <option value="G1">Section 01</option>
+                <option value="G2">Section 02</option>
+                <option value="G3">Section 03</option>
+            </select><br><br>
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </section>
+
+    <!-- Part 2 Extension: Student Comments Section -->
+    <section id="comments">
+        <h2>Student Comments</h2>
+        <article>
+            <h3>Afiq Danial</h3>
+            <p>The lab exercises provided a clear and practical understanding of how to structure forms and tables properly without relying on CSS yet.</p>
+        </article>
+        <article>
+            <h3>Siti Nur Aisyah</h3>
+            <p>Debugging the broken table and fixing form label associations in Problem B really helped solidify my knowledge of clean HTML practices.</p>
+        </article>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Copyright &copy; 2026 CSF3133</p>
+    </footer>
+
+</body>
+</html>
