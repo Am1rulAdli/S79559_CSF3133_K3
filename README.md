@@ -25,7 +25,7 @@ This repository contains my practical exercises for **CSF3133 Web Programming**.
 
 ## Quick links
 
-- **[Open the project homepage](index.html)** for a visual guide to every exercise.
+- **[Open the project homepage](https://am1ruladli.github.io/S79559_CSF3133_K3/)** for a visual guide to every exercise.
 - **[View the GitHub repository](https://github.com/Am1rulAdli/S79559_CSF3133_K3)** for the source code and latest updates.
 
 ## Explore the labs
@@ -39,7 +39,7 @@ Introduces basic page content, lists, links, images, and a small business webpag
 | Exercise A | [Open `lab1_ExerA.html`](Lab1_CSF3133/lab1_ExerA.html) |
 | Exercise B | [Open `lab1_ExerB.html`](Lab1_CSF3133/lab1_ExerB.html) |
 | WonderBuuk | [Open `lab1_wonderbuuk.html`](Lab1_CSF3133/lab1_wonderbuuk.html) |
-| Validation screenshots | [View folder](https://github.com/Am1rulAdli/S79559_CSF3133_K3/tree/main/Lab1_CSF3133/Validation_Lab1) |
+| Validation screenshots | [View folder](https://github.com/Am1rulAdli/S79559_CSF3133_K3/tree/main/Lab1_CSF3133/Validation) |
 
 ### [Lab 2 - Tables, forms, and semantic HTML](Lab2_CSF3133/)
 
@@ -86,7 +86,7 @@ Explores block and inline elements, entities, attributes, output elements, and a
 No installation or build process is required.
 
 1. Clone or download this repository.
-2. Open [`index.html`](index.html) in a web browser.
+2. Open [`index.html`](https://am1ruladli.github.io/S79559_CSF3133_K3/) in a web browser.
 3. Select a lab or exercise from the homepage.
 
 You can also open any `.html` file directly in a browser.
