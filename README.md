@@ -6,7 +6,7 @@
 
 **Amirul Adli Bin Rosazlan** · **S79559** · **Group K3**
 
-[![Open the project homepage](https://img.shields.io/badge/View-Project%20Homepage-2563eb?style=for-the-badge)](index.html)
+[![Open the project homepage](https://img.shields.io/badge/View-Project%20Homepage-2563eb?style=for-the-badge)](https://am1ruladli.github.io/S79559_CSF3133_K3/)
 [![GitHub repository](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/Am1rulAdli/S79559_CSF3133_K3)
 
 </div>
