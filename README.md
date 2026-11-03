@@ -39,7 +39,7 @@ Introduces basic page content, lists, links, images, and a small business webpag
 | Exercise A | [Open `lab1_ExerA.html`](Lab1_CSF3133/lab1_ExerA.html) |
 | Exercise B | [Open `lab1_ExerB.html`](Lab1_CSF3133/lab1_ExerB.html) |
 | WonderBuuk | [Open `lab1_wonderbuuk.html`](Lab1_CSF3133/lab1_wonderbuuk.html) |
-| Validation screenshots | [View folder](Lab1_CSF3133/Validation/) |
+| Validation screenshots | [View folder](https://github.com/Am1rulAdli/S79559_CSF3133_K3/tree/main/Lab1_CSF3133/Validation_Lab1) |
 
 ### [Lab 2 - Tables, forms, and semantic HTML](Lab2_CSF3133/)
 
@@ -53,7 +53,7 @@ Practices tables, forms, navigation, semantic page structure, and a personal pro
 | Semantic HTML | [Open `semantic.html`](Lab2_CSF3133/semantic.html) |
 | Table | [Open `table.html`](Lab2_CSF3133/table.html) |
 | Form | [Open `form.html`](Lab2_CSF3133/form.html) |
-| Validation screenshots | [View folder](Lab2_CSF3133/Validation_Lab2/) |
+| Validation screenshots | [View folder](https://github.com/Am1rulAdli/S79559_CSF3133_K3/tree/main/Lab2_CSF3133/Validation_Lab2) |
 
 ### [Lab 3 - HTML elements and input controls](Lab3_CSF3133/)
 
@@ -69,7 +69,7 @@ Explores block and inline elements, entities, attributes, output elements, and a
 | Input attributes | [Open `inattribute5.html`](Lab3_CSF3133/inattribute5.html) |
 | Output elements | [Open `output5.html`](Lab3_CSF3133/output5.html) |
 | Lab 3 project | [Open `lab3.html`](Lab3_CSF3133/lab3.html) |
-| Validation screenshots | [View folder](Lab3_CSF3133/Validation_Lab3/) |
+| Validation screenshots | [View folder](https://github.com/Am1rulAdli/S79559_CSF3133_K3/tree/main/Lab3_CSF3133/Validation_Lab3) |
 
 ## Project structure
 
