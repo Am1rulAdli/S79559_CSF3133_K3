@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab Exercise 3 - Contact Form & Calculator</title>
+</head>
+<body>
+
+    <!-- 1. Header Section -->
+    <div id="header">
+        <h1>Welcome to Our Portal</h1>
+        <span>Your trusted platform for inquiries and interactive tools</span>
+    </div>
+
+    <!-- 2. Content Section -->
+    <div id="content">
+        
+        <!-- Contact Form Sub-section -->
+        <h2>Contact Us</h2>
+        <form action="">
+            <label for="useremail">Email Address:</label>
+            <input type="email" id="useremail" name="useremail" placeholder="Enter your email" required>
+            <br><br>
+
+            <label for="contactdate">Preferred Contact Date:</label>
+            <input type="date" id="contactdate" name="contactdate">
+            <br><br>
+
+            <label for="satisfaction">Satisfaction Level (0 to 10):</label>
+            <input type="range" id="satisfaction" name="satisfaction" min="0" max="10" step="1" value="5">
+            <br><br>
+
+            <input type="submit" value="Submit Inquiry">
+        </form>
+
+        <hr>
+
+        <!-- Inline Calculator Sub-section -->
+        <h2>Quick Calculator</h2>
+        <form oninput="result.value=parseInt(num1.value) + parseInt(num2.value)">
+            <input type="number" id="num1" name="num1" value="0"> +
+            <input type="number" id="num2" name="num2" value="0"> =
+            <output name="result" for="num1 num2">0</output>
+        </form>
+
+    </div>
+
+    <!-- 3. Footer Section -->
+    <div id="footer">
+        <p>Contact Info: support@portal.com | Phone: +603-12345678</p>
+        <p>&copy; 2026 Student Portal. All rights reserved.</p>
+    </div>
+
+</body>
+</html>
