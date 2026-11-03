@@ -2,7 +2,7 @@
 
 # CSF3133 Web Programming Labs
 
-### A collection of HTML exercises and practical work
+### A student portfolio of HTML exercises and practical work
 
 **Amirul Adli Bin Rosazlan** · **S79559** · **Group K3**
 
@@ -23,6 +23,11 @@ This repository contains my practical exercises for **CSF3133 Web Programming**.
 
 > **Lecturer:** Dr. Ily Amalina
 
+## Quick links
+
+- **[Open the project homepage](index.html)** for a visual guide to every exercise.
+- **[View the GitHub repository](https://github.com/Am1rulAdli/S79559_CSF3133_K3)** for the source code and latest updates.
+
 ## Explore the labs
 
 ### [Lab 1 - HTML fundamentals](Lab1_CSF3133/)
@@ -38,7 +43,7 @@ Introduces basic page content, lists, links, images, and a small business webpag
 
 ### [Lab 2 - Tables, forms, and semantic HTML](Lab2_CSF3133/)
 
-Practises tables, forms, navigation, semantic page structure, and a personal profile page.
+Practices tables, forms, navigation, semantic page structure, and a personal profile page.
 
 | Exercise | Open |
 | --- | --- |
@@ -85,10 +90,6 @@ No installation or build process is required.
 3. Select a lab or exercise from the homepage.
 
 You can also open any `.html` file directly in a browser.
-
-## Repository
-
-View the source code and latest updates on [GitHub](https://github.com/Am1rulAdli/S79559_CSF3133_K3).
 
 <div align="center">
 

@@ -3,56 +3,284 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>List of Lab Projects - CSF3133</title>
+    <meta name="description" content="CSF3133 Web Programming lab exercises by Amirul Adli Bin Rosazlan.">
+    <title>CSF3133 | Web Programming Labs</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; color: #111; }
-        h1 { font-size: 28px; margin-bottom: 10px; }
-        h2 { font-size: 22px; margin-top: 30px; margin-bottom: 10px; }
-        p { margin: 5px 0; }
-        ul { list-style-type: disc; margin-top: 5px; padding-left: 20px; }
-        li { margin: 6px 0; }
-        a { color: #0000cc; text-decoration: underline; }
-        a:hover { color: #551a8b; }
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --text: #172033;
+            --muted: #64748b;
+            --surface: #ffffff;
+            --background: #f1f5f9;
+            --border: #dbe3ee;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: var(--background);
+            color: var(--text);
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        a {
+            color: var(--primary-dark);
+            font-weight: 600;
+        }
+
+        a:hover {
+            color: var(--primary);
+        }
+
+        .container {
+            margin: 0 auto;
+            max-width: 1100px;
+            padding: 0 24px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3a8a, #2563eb);
+            color: #ffffff;
+            padding: 72px 0 64px;
+        }
+
+        header h1 {
+            font-size: clamp(2.2rem, 5vw, 4rem);
+            line-height: 1.1;
+            margin: 0 0 16px;
+        }
+
+        header p {
+            font-size: 1.15rem;
+            margin: 0 0 28px;
+            max-width: 680px;
+        }
+
+        .student-details {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px 24px;
+            margin-bottom: 28px;
+        }
+
+        .student-details span {
+            color: #dbeafe;
+        }
+
+        .button {
+            background: #ffffff;
+            border-radius: 8px;
+            color: var(--primary-dark);
+            display: inline-block;
+            padding: 11px 18px;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background: #dbeafe;
+            color: var(--primary-dark);
+        }
+
+        nav {
+            background: var(--surface);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+
+        nav .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 24px;
+            padding-bottom: 14px;
+            padding-top: 14px;
+        }
+
+        nav a {
+            text-decoration: none;
+        }
+
+        main {
+            padding: 48px 0;
+        }
+
+        .intro {
+            margin-bottom: 36px;
+        }
+
+        .intro h2,
+        .labs-heading {
+            margin-top: 0;
+        }
+
+        .intro p {
+            color: var(--muted);
+            max-width: 760px;
+        }
+
+        .labs {
+            display: grid;
+            gap: 24px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        }
+
+        .lab-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(15, 23, 42, 0.06);
+            display: flex;
+            flex-direction: column;
+            padding: 26px;
+        }
+
+        .lab-card h3 {
+            color: var(--primary-dark);
+            margin: 0 0 8px;
+        }
+
+        .lab-card p {
+            color: var(--muted);
+            margin: 0 0 18px;
+        }
+
+        .lab-card ul {
+            flex: 1;
+            margin: 0 0 20px;
+            padding-left: 20px;
+        }
+
+        .lab-card li {
+            margin: 7px 0;
+        }
+
+        .lab-card .button {
+            background: var(--primary);
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .lab-card .button:hover {
+            background: var(--primary-dark);
+        }
+
+        footer {
+            background: #172033;
+            color: #cbd5e1;
+            padding: 28px 0;
+        }
+
+        footer p {
+            margin: 4px 0;
+        }
+
+        footer a {
+            color: #bfdbfe;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 52px 0 46px;
+            }
+
+            .container {
+                padding-left: 18px;
+                padding-right: 18px;
+            }
+        }
     </style>
 </head>
 <body>
+    <header>
+        <div class="container">
+            <p>CSF3133 · Web Programming</p>
+            <h1>My Web Programming Labs</h1>
+            <p>Explore a collection of HTML exercises covering page structure, forms, tables, semantic elements, and input controls.</p>
+            <div class="student-details">
+                <span><strong>Student:</strong> Amirul Adli Bin Rosazlan</span>
+                <span><strong>ID:</strong> S79559</span>
+                <span><strong>Group:</strong> K3</span>
+                <span><strong>Lecturer:</strong> Dr. Ily Amalina</span>
+            </div>
+            <a class="button" href="https://github.com/Am1rulAdli/S79559_CSF3133_K3" target="_blank" rel="noopener noreferrer">View GitHub repository</a>
+        </div>
+    </header>
 
-    <h1>List of Lab Projects</h1>
-    
-    <p>Name: Amirul Adli Bin Rosazlan</p>
-    <p>Student ID: S79559</p>
-    <p>Group: K3</p>
-    <p>Lecturer: Dr. Ily Amalina</p>
-    <p>GitHub Repo: <a href="https://github.com/Am1rulAdli/S79559_CSF3133_K3" target="_blank">Here</a></p>
+    <nav aria-label="Main navigation">
+        <div class="container">
+            <a href="#about">About</a>
+            <a href="#labs">Explore labs</a>
+            <a href="README.md">Project README</a>
+        </div>
+    </nav>
 
-    <h2>Lab 1:</h2>
-    <ul>
-        <li><a href="Lab1_CSF3133/lab1_ExerA.html">Exercise A</a></li>
-        <li><a href="Lab1_CSF3133/lab1_ExerB.html">Exercise B</a></li>
-        <li><a href="Lab1_CSF3133/lab1_wonderbuuk.html">Exercise WonderBuuk</a></li>
-        <li><a href="https://github.com/Am1rulAdli/S79559_CSF3133_K3/tree/main/Lab1_CSF3133/Validation" target="_blank">Validation Screenshot</a></li>
-    </ul>
+    <main class="container">
+        <section class="intro" id="about">
+            <h2>Welcome</h2>
+            <p>Choose a lab below to view the exercises and validation screenshots. Each page opens directly in your browser, so no installation is needed.</p>
+        </section>
 
-    <h2>Lab 2:</h2>
-    <ul>
-        <li><a href="Lab2_CSF3133/lab2_ExerA.html">Exercise A</a></li>
-        <li><a href="Lab2_CSF3133/lab2_ExerB.html">Exercise B</a></li>
-        <li><a href="Lab2_CSF3133/lab2.html">Exercise WonderBuuk</a></li>
-        <li><a href="https://github.com/Am1rulAdli/S79559_CSF3133_K3/tree/main/Lab2_CSF3133/Validation_Lab2" target="_blank">Validation Screenshot</a></li>
-    </ul>
+        <section id="labs" aria-labelledby="labs-heading">
+            <h2 class="labs-heading">Explore the labs</h2>
+            <div class="labs">
+                <article class="lab-card">
+                    <h3>Lab 1 · HTML Fundamentals</h3>
+                    <p>Builds a foundation with text, lists, links, images, and a small business webpage.</p>
+                    <ul>
+                        <li><a href="Lab1_CSF3133/lab1_ExerA.html">Exercise A</a></li>
+                        <li><a href="Lab1_CSF3133/lab1_ExerB.html">Exercise B</a></li>
+                        <li><a href="Lab1_CSF3133/lab1_wonderbuuk.html">WonderBuuk</a></li>
+                        <li><a href="Lab1_CSF3133/Validation/">Validation screenshots</a></li>
+                    </ul>
+                    <a class="button" href="Lab1_CSF3133/">Open Lab 1 folder</a>
+                </article>
 
-    <h2>Lab 3:</h2>
-    <ul>
-        <li><a href="Lab3_CSF3133/block.html">block</a></li>
-        <li><a href="Lab3_CSF3133/div.html">div</a></li>
-        <li><a href="Lab3_CSF3133/entity.html">entity</a></li>
-        <li><a href="Lab3_CSF3133/intro5.html">intro5</a></li>
-        <li><a href="Lab3_CSF3133/input5.html">input5</a></li>
-        <li><a href="Lab3_CSF3133/inattribute5.html">inattribute5</a></li>
-        <li><a href="Lab3_CSF3133/output5.html">output5</a></li>
-        <li><a href="Lab3_CSF3133/lab3.html">lab3</a></li>
-        <li><a href="https://github.com/Am1rulAdli/S79559_CSF3133_K3/tree/main/Lab3_CSF3133/Validation_Lab3" target="_blank">Validation Screenshot</a></li>
-    </ul>
+                <article class="lab-card">
+                    <h3>Lab 2 · Tables and Forms</h3>
+                    <p>Practises tables, forms, navigation, and semantic page structure.</p>
+                    <ul>
+                        <li><a href="Lab2_CSF3133/lab2_ExerA.html">Exercise A</a></li>
+                        <li><a href="Lab2_CSF3133/lab2_ExerB.html">Exercise B</a></li>
+                        <li><a href="Lab2_CSF3133/lab2.html">WonderBuuk</a></li>
+                        <li><a href="Lab2_CSF3133/semantic.html">Semantic HTML</a></li>
+                        <li><a href="Lab2_CSF3133/table.html">Table</a> · <a href="Lab2_CSF3133/form.html">Form</a></li>
+                        <li><a href="Lab2_CSF3133/Validation_Lab2/">Validation screenshots</a></li>
+                    </ul>
+                    <a class="button" href="Lab2_CSF3133/">Open Lab 2 folder</a>
+                </article>
 
+                <article class="lab-card">
+                    <h3>Lab 3 · HTML Elements</h3>
+                    <p>Explores block and inline elements, entities, attributes, output, and input types.</p>
+                    <ul>
+                        <li><a href="Lab3_CSF3133/block.html">Block elements</a> · <a href="Lab3_CSF3133/div.html">Div elements</a></li>
+                        <li><a href="Lab3_CSF3133/entity.html">HTML entities</a></li>
+                        <li><a href="Lab3_CSF3133/intro5.html">Introduction</a></li>
+                        <li><a href="Lab3_CSF3133/input5.html">Input</a> · <a href="Lab3_CSF3133/inattribute5.html">Attributes</a></li>
+                        <li><a href="Lab3_CSF3133/output5.html">Output</a> · <a href="Lab3_CSF3133/lab3.html">Lab project</a></li>
+                        <li><a href="Lab3_CSF3133/Validation_Lab3/">Validation screenshots</a></li>
+                    </ul>
+                    <a class="button" href="Lab3_CSF3133/">Open Lab 3 folder</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p><strong>CSF3133 Web Programming Labs</strong></p>
+            <p>&copy; 2026 Amirul Adli Bin Rosazlan · <a href="README.md">View project documentation</a></p>
+        </div>
+    </footer>
 </body>
 </html>
