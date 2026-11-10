@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 4 - Responsive Webpage with HTML5 and CSS</title>
+
+  <!-- External CSS Link -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <!-- Internal CSS Styling (Demonstrating ID, Class, and Text-Decoration Rules) -->
+  <style type="text/css">
+    #main-title {
+      text-decoration: overline underline;
+      letter-spacing: 1px;
+    }
+
+    .section-heading {
+      text-decoration: underline;
+      color: #0f4c81;
+      margin-bottom: 0.85rem;
+    }
+
+    .overline-title {
+      text-decoration: overline;
+      color: #1e3a8a;
+      margin-bottom: 0.5rem;
+    }
+
+    .deprecated-text {
+      text-decoration: line-through;
+      color: #dc2626;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .progress-box {
+      margin-top: 1rem;
+      padding: 0.75rem 1rem;
+      background-color: #eff6ff;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Semantic Header -->
+  <header>
+    <h1 id="main-title">Lab Module 4: HTML5 &amp; CSS Web Portal</h1>
+    <p>Building a Responsive Webpage with Semantic HTML5, Media, and CSS</p>
+  </header>
+
+  <!-- Semantic Navigation Bar using Unordered List -->
+  <nav>
+    <ul>
+      <li><a href="#about">About Course</a></li>
+      <li><a href="#media">Video Media</a></li>
+      <li><a href="#register">Student Form</a></li>
+      <li><a href="#contact">Contact Info</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content Container -->
+  <div class="container">
+
+    <!-- Section 1: About & Article -->
+    <section id="about">
+      <h2 class="section-heading">1. Semantic HTML5 &amp; Text Decoration</h2>
+      <p>
+        This webpage integrates semantic HTML5 elements with both internal and external
+        Cascading Style Sheets (CSS) to create a clean, responsive layout.
+      </p>
+
+      <article>
+        <h3 class="overline-title">Evolution of Web Styling Standards</h3>
+        <p>
+          Outdated HTML presentation tags like <span class="deprecated-text">&lt;font&gt;, &lt;center&gt;, and blink</span>
+          have been replaced by modern CSS rules. Explore the
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="resource-link">MDN CSS Documentation</a>
+          to test the <code>:link</code>, <code>:visited</code>, <code>:hover</code>, and <code>:active</code> link states.
+        </p>
+        <div class="progress-box">
+          <label for="lab-meter"><strong>Lab 4 Module Completion:</strong> </label>
+          <meter id="lab-meter" min="0" max="100" value="85">85%</meter> (85%)
+        </div>
+      </article>
+    </section>
+
+    <!-- Section 2: Embedded Video Media -->
+    <section id="media">
+      <h2 class="section-heading">2. Featured Educational Video</h2>
+      <p>
+        Below is an embedded HTML5 video element with playback controls and a descriptive caption:
+      </p>
+
+      <div class="video-wrapper">
+        <video width="600" height="340" controls>
+          <source src="upinipin.mp4" type="video/mp4">
+          Your browser does not support the HTML5 video tag.
+        </video>
+        <p class="video-caption">
+          Figure 1: Sample HTML5 video player (place <code>upinipin.mp4</code> in the same folder as <code>lab4.html</code>).
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 3: Interactive Form -->
+    <section id="register">
+      <h2 class="section-heading">3. Student Registration &amp; Interest Form</h2>
+      <p>Complete the form below to submit your profile and favorite hobbies:</p>
+
+      <form action="#register" method="post">
+        <!-- Name (Text Input) -->
+        <div class="form-group">
+          <label for="student-name" class="form-label">Name:</label>
+          <input type="text" id="student-name" name="name" placeholder="Enter your full name" required>
+        </div>
+
+        <!-- Email (Text Input) -->
+        <div class="form-group">
+          <label for="student-email" class="form-label">Email:</label>
+          <input type="text" id="student-email" name="email" placeholder="student@umt.edu.my" required>
+        </div>
+
+        <!-- Gender (Radio Buttons) -->
+        <div class="form-group">
+          <span class="form-label">Gender:</span>
+          <div class="option-group">
+            <label class="option-label">
+              <input type="radio" name="gender" value="Male" required> Male
+            </label>
+            <label class="option-label">
+              <input type="radio" name="gender" value="Female"> Female
+            </label>
+          </div>
+        </div>
+
+        <!-- Favorite Hobbies (Checkboxes) -->
+        <div class="form-group">
+          <span class="form-label">Favorite Hobbies:</span>
+          <div class="option-group">
+            <label class="option-label">
+              <input type="checkbox" name="hobbies" value="Coding"> Web Coding
+            </label>
+            <label class="option-label">
+              <input type="checkbox" name="hobbies" value="Reading"> Reading
+            </label>
+            <label class="option-label">
+              <input type="checkbox" name="hobbies" value="Gaming"> Gaming
+            </label>
+            <label class="option-label">
+              <input type="checkbox" name="hobbies" value="Sports"> Sports
+            </label>
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="form-group">
+          <input type="submit" value="Submit Registration">
+        </div>
+      </form>
+    </section>
+
+  </div>
+
+  <!-- Semantic Footer -->
+  <footer id="contact">
+    <p>&copy; 2026 Hakcipta Terpelihara - Lab Module 4 (CSS Part 1).</p>
+    <address>
+      Hubungi kami di <a href="mailto:emailanda@umt.edu.my">emailanda@umt.edu.my</a>
+    </address>
+  </footer>
+
+</body>
+</html>

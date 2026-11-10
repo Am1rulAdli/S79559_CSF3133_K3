@@ -1,0 +1,254 @@
+/* External CSS for Lab Exercise 4 (style.css) */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f7fb;
+  color: #1e293b;
+}
+
+/* Header Styling */
+header {
+  background: linear-gradient(135deg, #0f4c81, #1e3a8a);
+  color: #ffffff;
+  text-align: center;
+  padding: 2.2rem 1.5rem;
+}
+
+header p {
+  margin-top: 0.5rem;
+  font-size: 1.05rem;
+  color: #e0f2fe;
+}
+
+/* Navigation Bar using Unordered List */
+nav {
+  background-color: #98bf21;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav li {
+  margin: 0;
+}
+
+/* Navigation Link States (:link, :visited, :hover, :active) */
+nav a:link,
+nav a:visited {
+  display: block;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #98bf21;
+  min-width: 150px;
+  text-align: center;
+  padding: 12px 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease;
+}
+
+nav a:hover {
+  background-color: #7A991A;
+  text-decoration: underline;
+}
+
+nav a:active {
+  background-color: #556b11;
+  color: #fef08a;
+}
+
+/* Main Content Layout */
+.container {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 0 1.25rem;
+}
+
+section {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 1.75rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.06);
+}
+
+article {
+  background-color: #f8fafc;
+  border-left: 4px solid #0f4c81;
+  padding: 1.25rem;
+  margin-top: 1.25rem;
+  border-radius: 0 8px 8px 0;
+}
+
+/* Resource Links inside Article (:link, :visited, :hover, :active) */
+.resource-link:link {
+  color: #d97706;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.resource-link:visited {
+  color: #16a34a;
+}
+
+.resource-link:hover {
+  color: #c026d3;
+  text-decoration: overline underline;
+}
+
+.resource-link:active {
+  color: #2563eb;
+}
+
+/* Video Section Styling */
+.video-wrapper {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+video {
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+  border-radius: 8px;
+  border: 3px solid #cbd5e1;
+  background-color: #000000;
+}
+
+.video-caption {
+  margin-top: 0.75rem;
+  font-style: italic;
+  color: #475569;
+  font-size: 0.95rem;
+}
+
+/* Interactive Form Styling */
+form {
+  margin-top: 1.25rem;
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.45rem;
+  color: #1e293b;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #0f4c81;
+  box-shadow: 0 0 0 3px rgba(15, 76, 129, 0.15);
+}
+
+.option-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-top: 0.35rem;
+}
+
+.option-label {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  cursor: pointer;
+  font-weight: normal;
+}
+
+button[type="submit"],
+input[type="submit"] {
+  background-color: #0f4c81;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button[type="submit"]:hover,
+input[type="submit"]:hover {
+  background-color: #1e3a8a;
+}
+
+button[type="submit"]:active,
+input[type="submit"]:active {
+  transform: translateY(1px);
+}
+
+/* Footer Styling */
+footer {
+  background-color: #0f172a;
+  color: #e2e8f0;
+  text-align: center;
+  padding: 1.75rem 1rem;
+  margin-top: 2rem;
+}
+
+footer address {
+  margin-top: 0.5rem;
+  font-style: normal;
+}
+
+footer a:link,
+footer a:visited {
+  color: #38bdf8;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: #f472b6;
+  text-decoration: none;
+}
+
+footer a:active {
+  color: #facc15;
+}
+
+/* Responsive Media Query */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav a:link,
+  nav a:visited {
+    width: 100%;
+  }
+
+  .option-group {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+}
