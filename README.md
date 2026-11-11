@@ -13,13 +13,14 @@
 
 ## About this project
 
-This repository contains my practical exercises for **CSF3133 Web Programming**. It demonstrates the fundamentals of building webpages with HTML, including:
+This repository contains my practical exercises for **CSF3133 Web Programming**. It demonstrates webpage development with HTML and CSS, including:
 
 - Page structure and text formatting
 - Lists, links, images, and tables
 - Forms and input controls
 - Semantic HTML elements
 - HTML entities and validation work
+- CSS selectors, page styling, and multimedia
 
 > **Lecturer:** Dr. Ily Amalina
 
@@ -73,16 +74,20 @@ Explores block and inline elements, entities, attributes, output elements, and a
 
 ### [Lab 4 - CSS and multimedia](Lab4_CSF3133/)
 
-Builds styling, navigation, class and ID selectors, and multimedia content presentation.
+Practises CSS selectors and link states, page styling, navigation, semantic structure, forms, and HTML5 video.
 
 | Topic | Open |
 | --- | --- |
 | Lab 4 overview | [Open `lab4.html`](Lab4_CSF3133/lab4.html) |
 | Navigation | [Open `navigation.html`](Lab4_CSF3133/navigation.html) |
 | Structure | [Open `structure.html`](Lab4_CSF3133/structure.html) |
-| Classes | [Open `Class.html`](Lab4_CSF3133/Class.html) |
+| Class selector | [Open `Class.html`](Lab4_CSF3133/Class.html) |
+| Element selector | [Open `stail.html`](Lab4_CSF3133/stail.html) |
+| ID selector | [Open `stailID.html`](Lab4_CSF3133/stailID.html) |
+| Link states | [Open `stailLink.html`](Lab4_CSF3133/stailLink.html) |
 | Text styling | [Open `Teks.html`](Lab4_CSF3133/Teks.html) |
 | Video page | [Open `video.html`](Lab4_CSF3133/video.html) |
+| Student registration form | [Open the form section in `lab4.html`](Lab4_CSF3133/lab4.html#register) |
 | Problem A | [Open `lab4_ExerA.html`](Lab4_CSF3133/ProblemA_Terengganu/lab4_ExerA.html) |
 | Problem B | [Open `lab4_ExerB.html`](Lab4_CSF3133/ProblemB_eCafe/lab4_ExerB.html) |
 | Validation screenshots | [View folder](https://github.com/Am1rulAdli/S79559_CSF3133_K3/tree/main/Lab4_CSF3133/Validation_Lab4) |
