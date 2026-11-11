@@ -71,6 +71,22 @@ Explores block and inline elements, entities, attributes, output elements, and a
 | Lab 3 project | [Open `lab3.html`](Lab3_CSF3133/lab3.html) |
 | Validation screenshots | [View folder](https://github.com/Am1rulAdli/S79559_CSF3133_K3/tree/main/Lab3_CSF3133/Validation_Lab3) |
 
+### [Lab 4 - CSS and multimedia](Lab4_CSF3133/)
+
+Builds styling, navigation, class and ID selectors, and multimedia content presentation.
+
+| Topic | Open |
+| --- | --- |
+| Lab 4 overview | [Open `lab4.html`](Lab4_CSF3133/lab4.html) |
+| Navigation | [Open `navigation.html`](Lab4_CSF3133/navigation.html) |
+| Structure | [Open `structure.html`](Lab4_CSF3133/structure.html) |
+| Classes | [Open `Class.html`](Lab4_CSF3133/Class.html) |
+| Text styling | [Open `Teks.html`](Lab4_CSF3133/Teks.html) |
+| Video page | [Open `video.html`](Lab4_CSF3133/video.html) |
+| Problem A | [Open `lab4_ExerA.html`](Lab4_CSF3133/ProblemA_Terengganu/lab4_ExerA.html) |
+| Problem B | [Open `lab4_ExerB.html`](Lab4_CSF3133/ProblemB_eCafe/lab4_ExerB.html) |
+| Validation screenshots | [View folder](https://github.com/Am1rulAdli/S79559_CSF3133_K3/tree/main/Lab4_CSF3133/Validation_Lab4) |
+
 ## Project structure
 
 ```text
@@ -78,7 +94,8 @@ Explores block and inline elements, entities, attributes, output elements, and a
 ├── index.html              # Homepage with links to all exercises
 ├── Lab1_CSF3133/           # Lab 1 exercises and validation screenshots
 ├── Lab2_CSF3133/           # Lab 2 exercises and validation screenshots
-└── Lab3_CSF3133/           # Lab 3 exercises and validation screenshots
+├── Lab3_CSF3133/           # Lab 3 exercises and validation screenshots
+└── Lab4_CSF3133/           # Lab 4 CSS, multimedia, and validation work
 ```
 
 ## How to view the exercises
