@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Terengganu - Tourism Promotion Page</title>
+
+    <!-- Requirement 4: Link external CSS stylesheet (style.css) -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Requirement 4: Internal CSS (<style> block with at least two page-specific rules) -->
+    <style>
+        /* Page-specific Rule 1: Highlight banner subtitle text */
+        #hero-subtitle {
+            font-size: 18px;
+            color: #E0F7FA;
+            letter-spacing: 0.5px;
+            margin-top: 8px;
+        }
+
+        /* Page-specific Rule 2: Seat availability meter box styling */
+        .seat-status-box {
+            background-color: #E8F8F5;
+            border: 2px solid #1ABC9C;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Requirement 1: Semantic <header> section -->
+    <header id="top-header">
+        <h1>Visit Terengganu 2026</h1>
+        <p id="hero-subtitle">Where Nature Embraces Heritage — Islands, Culture &amp; Coastal Wonders</p>
+    </header>
+
+    <!-- Requirement 2: Semantic <nav> with unordered list (<ul>, <li>, <a>) linking to sections -->
+    <nav>
+        <ul>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#video">Promotional Video</a></li>
+            <li><a href="#trip">Book a Trip</a></li>
+            <li><a href="#footer-contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Requirement 1: Section 1 - Destinations (#destinations) with 3 <article> elements and <meter> -->
+    <section id="destinations">
+        <h2>Top Student &amp; Visitor Destinations</h2>
+        <p class="center">Explore our special student holiday packages across Terengganu's most iconic spots:</p>
+
+        <!-- Destination Article 1 -->
+        <article class="card">
+            <h3>1. Pulau Redang Marine Park</h3>
+            <p>
+                Famous for crystal-clear turquoise waters, white sandy beaches, and vibrant coral reefs
+                ideal for snorkelling and diving trips. Includes 3D2N chalet stay and boat transfer.
+            </p>
+            <p class="price">
+                Promotion Price: <span class="old-price">RM 299</span> <span class="new-price">RM 199</span> per pax
+            </p>
+            <p>
+                Learn more at the <a href="https://www.tourismterengganu.com" target="_blank">Official Terengganu Tourism Portal</a>.
+            </p>
+        </article>
+
+        <!-- Destination Article 2 -->
+        <article class="card">
+            <h3>2. Kuala Terengganu Drawbridge &amp; Pasar Payang</h3>
+            <p>
+                Experience the iconic Drawbridge skyline, shop for traditional batik and songket at Pasar Payang,
+                and savour authentic Keropok Lekor and Nasi Dagang by the waterfront.
+            </p>
+            <p class="price">
+                Promotion Price: <span class="old-price">RM 150</span> <span class="new-price">RM 99</span> per pax
+            </p>
+        </article>
+
+        <!-- Destination Article 3 -->
+        <article class="card">
+            <h3>3. Tasik Kenyir Eco-Adventure &amp; Islamic Civilization Park</h3>
+            <p>
+                Discover Southeast Asia's largest man-made lake, rainforest waterfalls, and the famous Crystal Mosque
+                at Taman Tamadun Islam.
+            </p>
+            <p class="price">
+                Promotion Price: <span class="old-price">RM 220</span> <span class="new-price">RM 149</span> per pax
+            </p>
+        </article>
+
+        <!-- Requirement 1: <meter> element showing how many trip seats have been filled -->
+        <div class="seat-status-box">
+            <p>
+                <strong>Upcoming Student Trip Quota:</strong>
+                <meter min="0" max="40" value="28">28 out of 40 seats filled</meter>
+                <span>28 / 40 seats filled (Hurry, only 12 seats left!)</span>
+            </p>
+        </div>
+    </section>
+
+    <!-- Requirement 1 & 3: Section 2 - Promotional Video (#video) with <video>, <source>, and caption -->
+    <section id="video" class="center">
+        <h2>Discover the Beauty of Terengganu</h2>
+        <p>Watch our promotional highlight video before planning your getaway:</p>
+
+        <figure class="video-figure">
+            <video width="560" height="315" controls>
+                <source src="terengganu.mp4" type="video/mp4">
+                Your browser does not support the HTML5 video tag.
+            </video>
+            <figcaption class="caption">
+                Figure 1: Beautiful islands, cultural heritage, and culinary delights of Terengganu.
+            </figcaption>
+        </figure>
+    </section>
+
+    <!-- Requirement 1 & 7: Section 3 - Trip Interest Form (#trip) styled with .trip-form -->
+    <section id="trip">
+        <h2>Register Your Trip Interest</h2>
+        <p class="center">Fill in the form below to reserve your student or visitor promotional package:</p>
+
+        <form action="#trip" method="post" class="trip-form">
+            <!-- Name (text input) -->
+            <div class="form-row">
+                <label for="visitor-name" class="field-label">Full Name:</label>
+                <input type="text" id="visitor-name" name="visitor_name" class="text-input" placeholder="Enter your full name" required>
+            </div>
+
+            <!-- E-mail (type="email") -->
+            <div class="form-row">
+                <label for="visitor-email" class="field-label">E-mail Address:</label>
+                <input type="email" id="visitor-email" name="visitor_email" class="text-input" placeholder="name@student.umt.edu.my" required>
+            </div>
+
+            <!-- Traveller type (radio buttons): Student, Staff, Public -->
+            <div class="form-row">
+                <span class="field-label">Traveller Type:</span>
+                <div class="choice-group">
+                    <label><input type="radio" name="traveller_type" value="Student" required> Student</label>
+                    <label><input type="radio" name="traveller_type" value="Staff"> Staff</label>
+                    <label><input type="radio" name="traveller_type" value="Public"> Public</label>
+                </div>
+            </div>
+
+            <!-- Interests (checkboxes): Islands, Food, Culture, Nature -->
+            <div class="form-row">
+                <span class="field-label">Interests (Select all that apply):</span>
+                <div class="choice-group">
+                    <label><input type="checkbox" name="interests" value="Islands"> Islands</label>
+                    <label><input type="checkbox" name="interests" value="Food"> Food</label>
+                    <label><input type="checkbox" name="interests" value="Culture"> Culture</label>
+                    <label><input type="checkbox" name="interests" value="Nature"> Nature</label>
+                </div>
+            </div>
+
+            <!-- Submit button -->
+            <div class="form-row center">
+                <button type="submit" class="submit-btn">Submit Trip Interest</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Requirement 1: Semantic <footer> with &copy; and <address> containing mailto: link -->
+    <footer id="footer-contact">
+        <p>&copy; 2026 Terengganu State Tourism Office. All Rights Reserved.</p>
+        <address>
+            Contact us at: <a href="mailto:info@tourismterengganu.gov.my">info@tourismterengganu.gov.my</a> |
+            Sultan Mahmud Airport Highway, 21300 Kuala Terengganu, Terengganu
+        </address>
+    </footer>
+
+</body>
+</html>

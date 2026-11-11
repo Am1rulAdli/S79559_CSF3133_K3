@@ -1,0 +1,206 @@
+/* ==========================================================================
+   External Stylesheet: cafe.css
+   Project: Problem B - e-Café Campus (Debugging and Extend)
+   ========================================================================== */
+
+/* 1. General Page Layout and Typography */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #FDFEFE;
+    color: #333333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4A2C11;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 24px 16px;
+}
+
+header h1 {
+    color: #FDEBD0;
+}
+
+h2 {
+    color: #4A2C11;
+    text-decoration: underline;
+    margin-bottom: 12px;
+}
+
+h3 {
+    color: #1A5276;
+    margin-bottom: 6px;
+}
+
+/* 2. Part 2 (Step 5): Navigation Bar Styles Moved to cafe.css */
+nav {
+    background-color: #1A5276;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+    display: block;
+    background-color: #1A5276;
+    color: #FFFFFF;
+    padding: 12px 22px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #E67E22;
+    color: #FFFFFF;
+}
+
+nav ul li a:active {
+    background-color: #C0392B;
+    color: #FFFFFF;
+}
+
+/* 3. Section Containers & Menu Cards */
+section {
+    width: 90%;
+    max-width: 860px;
+    margin: 22px auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border: 1px solid #E5E7E9;
+    border-radius: 8px;
+}
+
+.menu-item {
+    background-color: #FEF9E7;
+    border-left: 4px solid #E67E22;
+    padding: 14px 18px;
+    margin-top: 14px;
+    border-radius: 4px;
+}
+
+/* 4. Part 2 (Step 6): Old Price Strikethrough Styling (.old-price) */
+.old-price {
+    text-decoration: line-through;
+    color: #7F8C8D;
+    margin-right: 8px;
+}
+
+/* 5. Part 2 (Step 7): Responsive Video and Figure Caption Styling */
+.video-container {
+    margin-top: 12px;
+    text-align: center;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #4A2C11;
+    border-radius: 6px;
+    background-color: #000000;
+}
+
+figcaption {
+    margin-top: 8px;
+    font-style: italic;
+    color: #555555;
+    font-size: 14px;
+}
+
+/* 6. Part 2 (Step 8): Feedback Form Styling (.feedback-form) */
+.feedback-form {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 16px;
+    padding: 20px;
+    background-color: #FBF6F0;
+    border: 2px solid #D5DBDB;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 14px;
+}
+
+.form-group label,
+.group-title {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #4A2C11;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"] {
+    width: 100%;
+    padding: 9px 12px;
+    border: 1px solid #BDC3C7;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.form-group label.option-inline {
+    display: inline-block;
+    font-weight: normal;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.btn-submit {
+    background-color: #1A5276;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 22px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #E67E22;
+}
+
+/* 7. Part 2 (Step 9): Footer and Address Styling */
+footer {
+    background-color: #2C3E50;
+    color: #ECF0F1;
+    text-align: center;
+    padding: 20px 15px;
+    margin-top: 28px;
+}
+
+footer p {
+    color: #ECF0F1;
+    text-align: center;
+}
+
+footer address {
+    margin-top: 6px;
+    font-style: normal;
+}
+
+footer a:link,
+footer a:visited {
+    color: #FDEBD0;
+}
+
+footer a:hover {
+    color: #E67E22;
+}

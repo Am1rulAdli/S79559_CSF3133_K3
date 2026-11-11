@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- Part 2 (Step 7): Added responsive viewport meta tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Café Campus</title>
+
+    <!-- Part 2 (Step 5): Link external stylesheet cafe.css -->
+    <link rel="stylesheet" href="cafe.css">
+
+    <!-- Internal CSS (Fixed all syntax & selector errors from Given Code) -->
+    <style>
+        /* Fixed Error 3 (Lines 13-16): Placed link states in correct LVHA order (link -> visited -> hover -> active) */
+        a:link {color: #1A5276;}
+        a:visited {color: #7D3C98;}
+        a:hover {color: #E67E22;}
+        a:active {color: #C0392B;}
+
+        /* Fixed Error 4 (Line 17): Changed invalid 'overlined' to 'overline' */
+        h1 {text-decoration: overline;}
+
+        /* Fixed Error 5 (Line 18): Added missing colon after 'color' */
+        p {color: #333333; text-align: justify;}
+
+        /* Fixed Error 6 & 7 (Lines 19-21): Changed '#intro' to '.intro' to match class="intro" and added missing closing brace '}' */
+        .intro {
+            font-size: 18px;
+            background-color: #FDEBD0;
+            padding: 10px 14px;
+            border-radius: 6px;
+        }
+
+        /* Fixed Error 8 (Line 22): Added missing dot '.' prefix for class selector '.highlight' */
+        .highlight {
+            font-weight: bold;
+            color: #C0392B;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Part 1 (Step 2): List of Identified and Corrected Errors in Given Code -->
+    <!-- Error 1 (Line 7): Used HTML comment syntax instead of CSS comment /* Navigation bar */ inside <style>. -->
+    <!-- Error 2 (Line 9): Invalid CSS value 'list-style-type: no;' changed to 'list-style-type: none;'. -->
+    <!-- Error 3 (Lines 14-15): Wrong link state order ('a:hover' before 'a:visited'); reordered to LVHA (a:link, a:visited, a:hover, a:active). -->
+    <!-- Error 4 (Line 17): Invalid CSS value 'text-decoration: overlined;' changed to 'text-decoration: overline;'. -->
+    <!-- Error 5 (Line 18): Missing colon ':' in 'p {color #333333; ...}' changed to 'p {color: #333333; ...}'. -->
+    <!-- Error 6 (Lines 19 & 41): Selector mismatch between CSS '#intro' and HTML 'class="intro"'; changed CSS selector to '.intro'. -->
+    <!-- Error 7 (Line 21): Missing closing curly brace '}' at the end of the .intro rule. -->
+    <!-- Error 8 (Line 22): Missing dot '.' before class selector 'highlight'; changed to '.highlight'. -->
+    <!-- Error 9 (Line 34): Missing '#' in '<a href="menu">Menu</a>'; changed to '<a href="#menu">Menu</a>' so it jumps to the menu section. -->
+    <!-- Error 10 (Lines 42 & 46): Duplicate 'id="item"' on two <article> elements; changed to unique IDs 'id="item1"' and 'id="item2"' with class="menu-item". -->
+    <!-- Error 11 (Line 53): Missing 'controls' attribute on '<video>' tag; added 'controls' so the video can be played. -->
+    <!-- Error 12 (Line 54): Invalid MIME type 'type="mp4"' on <source>; changed to valid MIME type 'type="video/mp4"'. -->
+
+    <!-- Header Section -->
+    <header>
+        <h1>e-Café Campus</h1>
+    </header>
+
+    <!-- Navigation Bar (Part 1 Error 9 Fixed + Part 2 Step 8 Feedback link added) -->
+    <nav>
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Menu Section (Part 1 Error 10 Fixed + Part 2 Step 6 Old Price Promotion Added) -->
+    <section id="menu">
+        <h2>Today's Menu</h2>
+        <p class="intro">Freshly brewed coffee and local delights every day.</p>
+
+        <!-- Menu Item 1 with .old-price (line-through) and .highlight new price -->
+        <article id="item1" class="menu-item">
+            <h3>Kopi Tarik</h3>
+            <p>
+                Promotion: <span class="old-price">RM 4.50</span>
+                Only <span class="highlight">RM 3.50</span>
+            </p>
+        </article>
+
+        <!-- Menu Item 2 with .old-price (line-through) and .highlight new price -->
+        <article id="item2" class="menu-item">
+            <h3>Nasi Lemak</h3>
+            <p>
+                Promotion: <span class="old-price">RM 6.50</span>
+                Only <span class="highlight">RM 5.00</span>
+            </p>
+        </article>
+    </section>
+
+    <!-- Video Section (Part 1 Errors 11 & 12 Fixed + Part 2 Step 7 <figure> and <figcaption> Added) -->
+    <section id="video">
+        <h2>Watch Our Story</h2>
+        <figure class="video-container">
+            <video width="400" height="300" controls>
+                <source src="cafe.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <figcaption>Figure 1: Behind the scenes at e-Café Campus — brewing fresh local coffee daily.</figcaption>
+        </figure>
+    </section>
+
+    <!-- Part 2 (Step 8): Customer Feedback Form Section (#feedback) styled with .feedback-form -->
+    <section id="feedback">
+        <h2>Customer Feedback Form</h2>
+        <p>We value your visit! Share your experience and favourite menu items below:</p>
+
+        <form action="#feedback" method="post" class="feedback-form">
+            <!-- Name Field -->
+            <div class="form-group">
+                <label for="cust-name">Name:</label>
+                <input type="text" id="cust-name" name="customer_name" placeholder="Enter your name" required>
+            </div>
+
+            <!-- E-mail Field -->
+            <div class="form-group">
+                <label for="cust-email">E-mail:</label>
+                <input type="email" id="cust-email" name="customer_email" placeholder="student@umt.edu.my" required>
+            </div>
+
+            <!-- Visit Type Radio Buttons: Dine-in, Take-away -->
+            <div class="form-group">
+                <span class="group-title">Visit Type:</span>
+                <label class="option-inline"><input type="radio" name="visit_type" value="Dine-in" required> Dine-in</label>
+                <label class="option-inline"><input type="radio" name="visit_type" value="Take-away"> Take-away</label>
+            </div>
+
+            <!-- Favourite Items Checkboxes (at least 3 checkboxes) -->
+            <div class="form-group">
+                <span class="group-title">Favourite Items:</span>
+                <label class="option-inline"><input type="checkbox" name="fav_items" value="Kopi Tarik"> Kopi Tarik</label>
+                <label class="option-inline"><input type="checkbox" name="fav_items" value="Nasi Lemak"> Nasi Lemak</label>
+                <label class="option-inline"><input type="checkbox" name="fav_items" value="Roti Bakar"> Roti Bakar</label>
+                <label class="option-inline"><input type="checkbox" name="fav_items" value="Teh Tarik"> Teh Tarik</label>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-group">
+                <button type="submit" class="btn-submit">Submit Feedback</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Footer Section (Part 2 Step 9: Added <address> element with mailto: link) -->
+    <footer id="contact">
+        <p>&copy; 2026 e-Café Campus</p>
+        <address>
+            Contact us at: <a href="mailto:ecafe@campus.edu.my">ecafe@campus.edu.my</a> |
+            Student Union Building, Level 1
+        </address>
+    </footer>
+
+</body>
+</html>
