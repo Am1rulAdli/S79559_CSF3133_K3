@@ -104,6 +104,7 @@ Practises inline, internal, and external CSS, web fonts, background images, navi
 | UMT webpage | [Open `umt.html`](Lab5_CSF3133/umt.html) |
 | Food festival webpage | [Open `food.html`](Lab5_CSF3133/food.html) |
 | Campus bookstore webpage | [Open `shop.html`](Lab5_CSF3133/shop.html) |
+| Validation screenshots | [View folder](https://github.com/Am1rulAdli/S79559_CSF3133_K3/tree/main/Lab5_CSF3133/Validation_Lab5) |
 
 ## Project structure
 
@@ -114,7 +115,7 @@ Practises inline, internal, and external CSS, web fonts, background images, navi
 ├── Lab2_CSF3133/           # Lab 2 exercises and validation screenshots
 ├── Lab3_CSF3133/           # Lab 3 exercises and validation screenshots
 ├── Lab4_CSF3133/           # Lab 4 CSS, multimedia, and validation work
-└── Lab5_CSF3133/           # Lab 5 CSS styling and webpage exercises
+└── Lab5_CSF3133/           # Lab 5 CSS, webpages, and validation screenshots
 ```
 
 ## How to view the exercises
