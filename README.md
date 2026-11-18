@@ -92,6 +92,19 @@ Practises CSS selectors and link states, page styling, navigation, semantic stru
 | Problem B | [Open `lab4_ExerB.html`](Lab4_CSF3133/ProblemB_eCafe/lab4_ExerB.html) |
 | Validation screenshots | [View folder](https://github.com/Am1rulAdli/S79559_CSF3133_K3/tree/main/Lab4_CSF3133/Validation_Lab4) |
 
+### [Lab 5 - CSS styling and web pages](Lab5_CSF3133/)
+
+Practises inline, internal, and external CSS, web fonts, background images, navigation, and styled tables through standalone examples and themed webpages.
+
+| Topic | Open |
+| --- | --- |
+| Inline and internal CSS | [Open `inline.html`](Lab5_CSF3133/inline.html) · [Open `internal.html`](Lab5_CSF3133/internal.html) |
+| External CSS and Google Fonts | [Open `external.html`](Lab5_CSF3133/external.html) · [Open `link.html`](Lab5_CSF3133/link.html) |
+| Background images, navigation, and tables | [Open `bgImage.html`](Lab5_CSF3133/bgImage.html) · [Open `navigation.html`](Lab5_CSF3133/navigation.html) · [Open `table.html`](Lab5_CSF3133/table.html) |
+| UMT webpage | [Open `umt.html`](Lab5_CSF3133/umt.html) |
+| Food festival webpage | [Open `food.html`](Lab5_CSF3133/food.html) |
+| Campus bookstore webpage | [Open `shop.html`](Lab5_CSF3133/shop.html) |
+
 ## Project structure
 
 ```text
@@ -100,7 +113,8 @@ Practises CSS selectors and link states, page styling, navigation, semantic stru
 ├── Lab1_CSF3133/           # Lab 1 exercises and validation screenshots
 ├── Lab2_CSF3133/           # Lab 2 exercises and validation screenshots
 ├── Lab3_CSF3133/           # Lab 3 exercises and validation screenshots
-└── Lab4_CSF3133/           # Lab 4 CSS, multimedia, and validation work
+├── Lab4_CSF3133/           # Lab 4 CSS, multimedia, and validation work
+└── Lab5_CSF3133/           # Lab 5 CSS styling and webpage exercises
 ```
 
 ## How to view the exercises
