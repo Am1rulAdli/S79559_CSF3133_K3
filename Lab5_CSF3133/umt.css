@@ -1,0 +1,253 @@
+/* ==========================================================================
+   CSF3133 Lab Exercise 5: External Stylesheet (umt.css)
+   Universiti Malaysia Terengganu (UMT) Webpage Styling
+   ========================================================================== */
+
+/* 1. Global Reset & Body Background + Google Fonts Styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #1e293b;
+    /* Subtle coastal ocean-tinted background with soft gradient */
+    background-color: #f0f6fa;
+    background-image: linear-gradient(180deg, #e0f2fe 0%, #f0f6fa 35%, #f8fafc 100%);
+    min-height: 100vh;
+}
+
+/* 2. Header Styling */
+header {
+    background: linear-gradient(135deg, #1e1b4b 0%, #311042 55%, #0f766e 100%);
+    color: #ffffff;
+    text-align: center;
+    padding: 44px 20px 36px;
+    border-bottom: 4px solid #f97316;
+}
+
+.header-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.university-tag {
+    display: inline-block;
+    background-color: rgba(249, 115, 22, 0.2);
+    border: 1px solid #fb923c;
+    color: #ffedd5;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 4px 14px;
+    border-radius: 999px;
+    margin-bottom: 12px;
+}
+
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+header .motto {
+    font-size: 16px;
+    font-style: italic;
+    color: #e2e8f0;
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+/* 3. Navigation Bar Styling (Distinct Color & Hover Effects) */
+nav {
+    background-color: #0f172a;
+    box-shadow: 0 4px 10px rgba(15, 23, 42, 0.15);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    max-width: 1040px;
+}
+
+.nav-list li {
+    float: left;
+}
+
+.nav-list li a {
+    display: block;
+    color: #f8fafc;
+    text-align: center;
+    padding: 15px 24px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.nav-list li a.active {
+    background-color: #f97316;
+    color: #ffffff;
+}
+
+.nav-list li a:hover:not(.active) {
+    background-color: #0d9488;
+    color: #ffffff;
+}
+
+/* 4. Main Content Layout, Spacing & Section Separation */
+.content-section {
+    max-width: 1040px;
+    margin: 32px auto;
+    padding: 0 20px;
+}
+
+.card-article {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 32px 36px;
+    margin-bottom: 28px;
+    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.07);
+    border: 1px solid #e2e8f0;
+}
+
+.card-article h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    color: #1e1b4b;
+    margin-bottom: 18px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #0d9488;
+}
+
+.card-article h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+    color: #0f172a;
+    margin-top: 28px;
+    margin-bottom: 14px;
+}
+
+/* 5. Paragraph Text Alignment & Readability */
+.card-article p {
+    text-align: justify;
+    margin-bottom: 18px;
+    color: #334155;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* 6. Table Styling (Borders, Alternating Rows, Padding, Hover Effects) */
+.table-wrapper {
+    margin-top: 24px;
+    overflow-x: auto;
+}
+
+#umt-table {
+    font-family: 'Roboto', Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 8px;
+    background-color: #ffffff;
+}
+
+#umt-table th,
+#umt-table td {
+    border: 1px solid #cbd5e1;
+    padding: 12px 14px;
+    text-align: left;
+    vertical-align: top;
+}
+
+#umt-table th {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.6px;
+    background-color: #0f766e;
+    color: #ffffff;
+    text-align: center;
+}
+
+#umt-table td:first-child {
+    font-weight: 700;
+    color: #1e1b4b;
+    text-align: center;
+    white-space: nowrap;
+}
+
+#umt-table tr:nth-child(even) {
+    background-color: #f1f5f9;
+}
+
+#umt-table tr:hover {
+    background-color: #fef3c7;
+    transition: background-color 0.2s ease;
+}
+
+/* 7. Contact Section List & Links */
+.info-list {
+    list-style-type: none;
+    margin-top: 12px;
+}
+
+.info-list li {
+    padding: 10px 14px;
+    margin-bottom: 8px;
+    background-color: #f8fafc;
+    border-left: 4px solid #f97316;
+    border-radius: 4px;
+    color: #1e293b;
+}
+
+.info-list a {
+    color: #0f766e;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.info-list a:hover {
+    text-decoration: underline;
+    color: #ea580c;
+}
+
+/* 8. Footer Styling (Subtle Background Color & Centered Text) */
+footer {
+    background-color: #e2e8f0;
+    color: #334155;
+    text-align: center;
+    padding: 22px 20px;
+    margin-top: 40px;
+    border-top: 1px solid #cbd5e1;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* 9. Responsive Adjustment for Smaller Screens */
+@media (max-width: 640px) {
+    header h1 {
+        font-size: 24px;
+    }
+    .nav-list li {
+        float: none;
+    }
+    .card-article {
+        padding: 20px;
+    }
+}
