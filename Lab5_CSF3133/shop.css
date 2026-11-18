@@ -1,0 +1,118 @@
+/* General Page & Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url("books.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Headings Typography */
+h1, h2 {
+    font-family: 'Merriweather', serif;
+}
+
+/* Paragraph Readability */
+p {
+    line-height: 1.6;
+}
+
+/* Header Banner with Background Image */
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("books.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Horizontal Navigation Bar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+li a.active {
+    background-color: #04AA6D;
+}
+
+/* Main Content Container */
+main {
+    width: 90%;
+    max-width: 960px;
+    margin: 25px auto;
+}
+
+/* Product Table Styling */
+#products {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+    margin-top: 15px;
+}
+
+#products td,
+#products th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#products th {
+    background-color: #04AA6D;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+#products tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#products tr:hover {
+    background-color: #ddd;
+}
+
+#products th.price,
+#products td.price {
+    text-align: right;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #f1f1f1;
+    color: #333;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
