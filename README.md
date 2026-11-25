@@ -106,6 +106,22 @@ Practises inline, internal, and external CSS, web fonts, background images, navi
 | Campus bookstore webpage | [Open `shop.html`](Lab5_CSF3133/shop.html) |
 | Validation screenshots | [View folder](https://github.com/Am1rulAdli/S79559_CSF3133_K3/tree/main/Lab5_CSF3133/Validation_Lab5) |
 
+### [Lab 6 - JavaScript fundamentals](Lab6_CSF3133/)
+
+Practises JavaScript events, form validation, DOM updates, timers, and interactive applications.
+
+| Exercise | Open |
+| --- | --- |
+| JavaScript quiz | [Open `index.html`](Lab6_CSF3133/index.html) |
+| First JavaScript | [Open `firstjs.html`](Lab6_CSF3133/firstjs.html) |
+| Date and time | [Open `datetimejs.html`](Lab6_CSF3133/datetimejs.html) |
+| Bulb control | [Open `changelight.html`](Lab6_CSF3133/changelight.html) |
+| Form validation | [Open `form-validation.html`](Lab6_CSF3133/form-validation.html) |
+| Guess the number | [Open `guess-number.html`](Lab6_CSF3133/guess-number.html) |
+| Multiplication table | [Open `multiplication-table.html`](Lab6_CSF3133/multiplication-table.html) |
+| Problem A - Rock, Paper, Scissors | [Open `lab6_ExerA.html`](Lab6_CSF3133/ProblemA/lab6_ExerA.html) |
+| Problem B - Grade calculator | [Open `grade.html`](Lab6_CSF3133/ProblemB/grade.html) |
+
 ## Project structure
 
 ```text
@@ -115,7 +131,8 @@ Practises inline, internal, and external CSS, web fonts, background images, navi
 ├── Lab2_CSF3133/           # Lab 2 exercises and validation screenshots
 ├── Lab3_CSF3133/           # Lab 3 exercises and validation screenshots
 ├── Lab4_CSF3133/           # Lab 4 CSS, multimedia, and validation work
-└── Lab5_CSF3133/           # Lab 5 CSS, webpages, and validation screenshots
+├── Lab5_CSF3133/           # Lab 5 CSS, webpages, and validation screenshots
+└── Lab6_CSF3133/           # Lab 6 JavaScript exercises and applications
 ```
 
 ## How to view the exercises
