@@ -1,0 +1,94 @@
+/* Extension Step 9: Page, form, button, and table styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    margin: 24px;
+}
+
+.container {
+    max-width: 520px;
+}
+
+h2 {
+    color: #1e4d7b;
+    margin-bottom: 14px;
+}
+
+form {
+    background-color: #ffffff;
+    border: 1px solid #dce2e8;
+    border-radius: 6px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 4px;
+    font-size: 0.9rem;
+}
+
+input[type="text"] {
+    width: 100%;
+    max-width: 300px;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.btn-group {
+    margin-top: 4px;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #2e78b7;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-right: 6px;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #1e5a8d;
+}
+
+#result, #checkedTime {
+    font-weight: bold;
+    margin: 4px 0;
+}
+
+#checkedTime {
+    margin-bottom: 14px;
+    font-size: 0.9rem;
+}
+
+/* Grade table styling */
+table {
+    width: 300px;
+    border-collapse: collapse;
+    margin-top: 12px;
+    background-color: #ffffff;
+}
+
+th, td {
+    border: 1px solid #cbd5e1;
+    padding: 8px 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #1e4d7b;
+    color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: #f8fafc;
+}
